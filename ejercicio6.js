@@ -8,12 +8,11 @@ const fantasticFour = [
 ];
 
 
-function swap (fantasticFour, index1, index2) {
+swap = (array, index1, index2) => {
+  let aux = array[index1];
+  array[index1] = array[index2];
+  array[index2] = aux;
+  return array;
+}
 
- let aux = fantasticFour[index1];
- fantasticFour[index1] = fantasticFour[index2];
- fantasticFour[index2] = aux;
-
- return fantasticFour}
-
-console.log (swap(fantasticFour, 0, 3));
+console.log (swap(fantasticFour, 3, 1));
